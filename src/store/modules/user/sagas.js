@@ -15,10 +15,10 @@ export function* updateProfile({ payload }) {
       ...(rest.oldPassword ? rest : {}),
     };
 
-    const response = yield call(api.pu, 'users', profile);
+    const response = yield call(api.put, 'users', profile);
 
     toast.success('Perfil atualizado com sucesso!');
-
+    console.tron.log('OI');
     yield put(updateProfileSuccess(response.data));
   } catch (err) {
     toast.error('Erro ao atualizar perfil, confira seus dados!');

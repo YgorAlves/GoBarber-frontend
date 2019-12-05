@@ -72,13 +72,3 @@ export const Container = styled.div`
     }
   }
 `;
-
-export const Logout = styled.button`
-  text-align: center;
-  display: block;
-  background: transparent;
-  border: none;
-  max-width: 100px;
-  margin: 0 auto;
-  color: #fff;
-`;
